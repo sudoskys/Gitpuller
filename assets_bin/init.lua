@@ -1,0 +1,19 @@
+appname="GITpuller"
+appver="1.0.0"
+appcode="21"
+appsdk="16"
+path_pattern="github"
+packagename="com.luoying.notebook"
+theme="Theme_Material_Light"
+app_key=""
+app_channel="Official"
+developer="luoying"
+description="Github tool"
+debugmode=true
+user_permission={
+  "ACCESS_NETWORK_STATE",
+  "ACCESS_WIFI_STATE",
+  "INTERNET",
+  "READ_EXTERNAL_STORAGE",
+  "WRITE_EXTERNAL_STORAGE"
+}

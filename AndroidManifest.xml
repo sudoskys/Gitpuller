@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='utf-8'?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.github.rawlua">
+
+    <!-- 读取通话状态和移动网络信息 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <!-- 查看 WLAN 状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <!-- 查看网络连接 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <!-- 完全的网络访问权限 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <!-- 修改或删除 SD 卡中的内容 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <!-- 读取存储卡中的内容 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name="com.androlua.LuaApplication"
+        android:resizeableActivity="true"
+        android:supportsPictureInPicture="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:usesCleartextTraffic="true"
+        android:requestLegacyExternalStorage="true"
+        android:theme="@style/AppTheme">
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false"/>
+
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="4"/>
+
+        <activity
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:name="com.androlua.Main"/>
+
+        <activity
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:label="@string/app_name"
+            android:name="com.androlua.LuaActivity">
+            <intent-filter>
+                <action 
+                    android:name="android.intent.action.VIEW" />
+                <action 
+                    android:name="android.intent.action.EDIT" />
+                <category 
+                    android:name="android.intent.category.DEFAULT" />
+                <category 
+                    android:name="android.intent.category.BROWSABLE" />
+                <data android:mimeType="application/lua" />
+                <data android:scheme="file" />
+                <data android:scheme="content" />
+                <data android:host="*" />
+            </intent-filter>
+            <intent-filter>
+                <action 
+                    android:name="android.intent.action.VIEW" />
+                <category 
+                    android:name="android.intent.category.DEFAULT" />
+                <category 
+                    android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="file" />
+                <data android:scheme="content" />
+                <data android:mimeType="text/*" />
+                <data android:host="*" />
+                <data android:pathPattern=".*\\.lua" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:documentLaunchMode="intoExisting"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:excludeFromRecents="false"
+            android:label="@string/app_name"
+            android:name="com.androlua.LuaActivityX">
+            <intent-filter>
+                <action 
+                    android:name="android.intent.action.VIEW" />
+                <action 
+                    android:name="android.intent.action.EDIT" />
+                <category 
+                    android:name="android.intent.category.DEFAULT" />
+                <category 
+                    android:name="android.intent.category.BROWSABLE" />
+                <data android:mimeType="application/lua" />
+                <data android:scheme="file" />
+                <data android:scheme="content" />
+                <data android:host="*" />
+            </intent-filter>
+            <intent-filter>
+                <action 
+                    android:name="android.intent.action.VIEW" />
+                <category 
+                    android:name="android.intent.category.DEFAULT" />
+                <category 
+                    android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="file" />
+                <data android:scheme="content" />
+                <data android:mimeType="text/*" />
+                <data android:host="*" />
+                <data android:pathPattern=".*\\.lua" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|navigation|screenLayout|fontScale|smallestScreenSize|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:name="com.androlua.Welcome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:authorities="com.github.rawlua"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            android:name="android.content.FileProvider">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/androlua_filepaths"/>
+
+        </provider>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,60 @@
+require "import"
+import "android.app.*"
+import "android.os.*"
+import "android.widget.*"
+import "android.view.*"
+
+--导入第三方库
+import "android.support.v7.widget.*"
+import "com.LuaRecyclerAdapter"
+import "com.LuaRecyclerHolder"
+import "com.AdapterCreator"
+
+import "com.bumptech.glide.*"
+
+layout={
+  PageView;
+  layout_height="-1";
+  layout_width="-1";
+  id="jc";
+  pages={
+    {
+      RecyclerView,
+      --layout_marginTop="20dp",
+      layout_width="-1",
+      layout_height="-1",
+      id="recy",
+    },
+  }
+}
+
+activity.setContentView(loadlayout(layout))
+
+--瀑布流,子控件的高度不能写死
+item={
+  LinearLayout,
+  layout_width="50%w",
+  padding="20",
+  id="it",
+  {
+    CardView,
+    radius="15",
+    {
+      LinearLayout,
+      orientation="vertical",
+      Gravity="center",
+      {
+        ImageView;
+        paddingTop="20",
+        --scaleType="",
+        id="img",
+      };
+      {
+        TextView,
+        paddingTop="20",
+        Gravity="center",
+        id="tv",
+      },
+    },
+  },
+}

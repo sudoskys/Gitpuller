@@ -1,0 +1,37 @@
+{
+  LinearLayout;
+  layout_width="fill";
+  layout_height="32dp";
+  id="root",
+  {
+    ImageView;
+    layout_height="22dp";
+    layout_gravity="center";
+    layout_width="22dp";
+    id="next",
+    src="drawable/image/chevron_right.png"
+  };
+  {
+    ImageView;
+
+    layout_height="22dp";
+    layout_width="22dp";
+    id="now",
+    layout_gravity="center";
+  };
+  {
+    TextView;
+    layout_gravity="center";
+    layout_marginLeft="8dp";
+    text=tostring(title) or "NULL";
+    textSize="13dp";
+    id="title",
+  };
+  {
+    TextView;
+    id="data",
+    text=tostring(data) or "NULL";
+    layout_width="0";
+    layout_height="0";
+  };
+}

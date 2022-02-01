@@ -1,0 +1,75 @@
+{
+  LinearLayout;
+  layout_width="fill";
+  orientation="vertical";
+  layout_height="fill";
+  {
+    LinearLayout;
+    layout_width="fill";
+    id="status_bar";
+    background=maincolor;
+    elevation="2dp";
+  };
+  {
+    LinearLayout;
+    layout_width="fill";
+    layout_height="54dp";
+    elevation="2dp";
+    orientation="horizontal";
+    background=maincolor;
+    {
+      LinearLayout;
+      layout_width="55dp";
+      layout_height="55dp";
+      gravity="center";
+      id="Sideslip";
+      {
+        ImageView;
+        layout_width="25dp";
+        colorFilter=imagecolor;
+        src="drawable/back.png";
+        layout_height="28dp";
+      };
+    };
+    {
+      LinearLayout;
+      layout_weight="1";
+      orientation="horizontal";
+      layout_height="fill";
+      {
+        TextView;
+        textSize="22sp";
+        textColor=txtcolor;
+        text="标题";
+        layout_gravity="center";
+        id="title";
+      };
+      {
+        TextView;
+        textSize="0sp";
+        textColor="#ffffffff";
+        text="     辅助说明";
+        layout_gravity="center";
+       layout_width="fill";
+      };
+    };
+  };
+  {
+    LinearLayout;
+    layout_width="fill";
+    layout_height="fill";
+    orientation="vertical";
+    id="主框架";
+    {
+      LinearLayout;
+      layout_width="fill";
+      layout_height="fill";
+      orientation="vertical";
+        id="mainlays";
+
+    
+    };
+    
+  };
+
+};
