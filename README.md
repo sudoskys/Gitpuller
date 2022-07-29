@@ -79,8 +79,9 @@ Github = Git:new("api.github.com",{debug=true,filemirror="raw.githubusercontent.
 ![counter](https://count.getloli.com/get/@sudoskys-github-Gitpuller?theme=moebooru)
 
 
+
 #### Support
 
-如果你感觉这个库帮到了你，可以给我买瓶矿泉水
+如果你感觉这对你有帮助，可以试着我赞助我一点～
 
-[![s](https://img.shields.io/badge/Mianbaoduo-support-DB94A2)](https://mianbaoduo.com/o/Sky2023)
+[![s](https://img.shields.io/badge/Become-sponsor-DB94A2)](https://dun.mianbaoduo.com/@Sky0717)
