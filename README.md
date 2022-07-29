@@ -4,9 +4,9 @@
 
 
 <p align="center">
-<img src="https://img.shields.io/badge/language-lua-blue.svg"/>
-<img src="https://img.shields.io/badge/license-MIT-blue"/>
-<img src="https://img.shields.io/badge/Androlua+-5.0.19-blue"/></a>
+<img src="https://img.shields.io/badge/language-lua-2D4086.svg"/>
+<img src="https://img.shields.io/badge/license-MIT-BF6040"/>
+<img src="https://img.shields.io/badge/Androlua+-5.0.19-2D4186"/></a>
 </p>
 
 
@@ -83,4 +83,4 @@ Github = Git:new("api.github.com",{debug=true,filemirror="raw.githubusercontent.
 
 如果你感觉这个库帮到了你，可以给我买瓶矿泉水
 
-[![s](https://img.shields.io/badge/Mianbaoduo-support-E6B3C4)](https://mianbaoduo.com/o/Sky2023)
+[![s](https://img.shields.io/badge/Mianbaoduo-support-DB94A2)](https://mianbaoduo.com/o/Sky2023)
