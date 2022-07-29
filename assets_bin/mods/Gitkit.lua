@@ -100,7 +100,7 @@ function Git:getinfo(Url,name,cookie,callback)
         --dialog=MaterialAlertDialogBuilder(this) --FA2用这个
         .setTitle("403 请求限制")
         .setMessage(content)
-        .setPositiveButton("确认",{onClick=function(v) print"点击了积极按钮"end})
+        .setPositiveButton("确认",{onClick=function(v) end})
         --   .setNeutralButton("中立",nil)
         --   .setNegativeButton("否认",nil)
         .show()
