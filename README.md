@@ -83,4 +83,4 @@ Github = Git:new("api.github.com",{debug=true,filemirror="raw.githubusercontent.
 
 如果你感觉这个库帮到了你，可以给我买瓶矿泉水
 
-[![s](https://img.shields.io/badge/Mianbaoduo-support-ff69b4)](https://mianbaoduo.com/o/bread/Yp2Vl59t)
+[![s](https://img.shields.io/badge/Mianbaoduo-support-E6B3C4)](https://mianbaoduo.com/o/Sky2023)
