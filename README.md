@@ -9,7 +9,7 @@
 <img src="https://img.shields.io/badge/Androlua+-5.0.19-blue"/></a>
 </p>
 
-[![s](https://img.shields.io/badge/Sponsor-Alipay-ff69b4)](https://azz.net/ly233)
+
 
 项目含有 Gitkit 库文件来使用GithubApi ，并含有一个 列表展开示例。
 
@@ -78,3 +78,6 @@ Github = Git:new("api.github.com",{debug=true,filemirror="raw.githubusercontent.
 
 ![counter](https://count.getloli.com/get/@sudoskys-github-Gitpuller?theme=moebooru)
 
+
+#### Support
+[![s](https://img.shields.io/badge/Sponsor-Alipay-ff69b4)](https://azz.net/ly233)
