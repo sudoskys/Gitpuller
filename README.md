@@ -84,4 +84,4 @@ Github = Git:new("api.github.com",{debug=true,filemirror="raw.githubusercontent.
 
 如果你感觉这对你有帮助，可以试着我赞助我一点～
 
-[![s](https://img.shields.io/badge/Become-sponsor-DB94A2)](https://dun.mianbaoduo.com/@Sky0717)
+[![s](https://img.shields.io/badge/Become-sponsor-DB94A2)](https://afdian.net/a/Suki1077)
